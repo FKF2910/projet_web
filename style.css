@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;    
+} 
+
+
+head{
+    height: 100px;
+}
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    width: 100%;
+    background-color: white;
+
+}
+footer{
+    text-align: center;
+    border-top: 1px solid black ;
+}
+
+
+/* Je stylise la page index*/
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    margin-top: 20px;
+    background-color: rgb(0, 115, 128)  ;
+    overflow: hidden; 
+       
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    
+}
+
+nav li {
+    margin: 15px 15px;
+}
+
+nav  ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+       
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px;
+    width: 90%;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+#presentation{
+    padding: 10px;
+    border: 1px solid black;
+
+}
+#contact p{
+    font-size: 28px;
+    text-decoration: underline;
+    padding-top: 10px;
+
+}
+
+#contact form {
+    width: 60%;
+    padding: 10px;  
+    margin-left: 50px;
+}
+textarea{
+    vertical-align: top;
+    min-height: 70px;
+    
+}
+button {
+    padding: 5px; 
+    cursor: pointer; /* Curseur devient une main survolée */
+    margin-left: 200px;
+}
+
+/* Je stylise la page cv */
+
+                       /* Section Civil State et Photo */
+#cv{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+#civil-state-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    
+}
+#civil-state{
+    flex:60%;
+    margin: 20px;
+    padding: 10px;
+}
+#photo{
+    margin-left: 0;
+    
+}
+   
+
+                        /* Section Education, Skills, Hobbies */
+div {
+    margin: 20px;
+    padding: 10px;
+   
+}
+
+div ul{
+    list-style-type:disc;
+    margin-left: 20px; /* Décalage vers la droite */
+    
+}
+div ul li {
+    line-height: 40px;
+    
+}
+
+.skills p, .education p, .hobbies_cv p {
+    width: 90%;
+    border-bottom: 1px solid #333;
+    font-size: 28px;
+
+}
+
+/*JE STYLISE LA PAGE RESOURCES*/
+
+#downloads, #skills, #media {
+    padding: 20px;
+}
+#downloads p, #skills p , #media p{
+    width: 90%;
+    font-size: 28px;
+    border-bottom: 1px solid #333;
+}
+
+#downloads ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid darkgrey;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+#media {
+    margin-top: 0px;    
+}
+
+
+.media-header {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.media-content {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+#video, #code-sample {
+    width: 50%;
+
+}
+
+#video video {
+    width: 100%;
+    padding: 5px;
+    height: auto;
+}
+
+#code-sample pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 5px;
+    overflow-x: auto;
+    height: auto;
+}
+
+
+/* JE STYLISE MON SITE about me;*/
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* Ratio 16:9 (hauteur/largeur) */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    border: none;
+}
+.hobbies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    gap: 20px;
+    width: 80%;
+    justify-content: center;
+    
+}
+
+.hobby {
+    padding: 10px;
+    background-color: rgba(69, 91, 165, 0.315);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.hobby:hover {
+    transform: scale(1.05);
+}
+
+.hobby h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hobby p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: none;
+}
+
+.hobby p {
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+#meme img {
+    width: 40%;
+    padding: 20px;
+
+}
+
+#livre img{
+    height: auto;
+    width: 70%;
+}
+#recipe img{
+    width: 70%;
+}
+#manga img{
+    width: 70%;
+}
+
+
